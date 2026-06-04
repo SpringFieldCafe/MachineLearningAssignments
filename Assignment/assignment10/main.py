@@ -21,9 +21,6 @@ def get_local_dataset_path():
     current_folder = Path(__file__).resolve().parent
 
     candidate_names = [
-        "iris (1)(2).data",
-        "iris (1)(1).data",
-        "iris (1).data",
         "iris.data",
         "iris.txt",
     ]
