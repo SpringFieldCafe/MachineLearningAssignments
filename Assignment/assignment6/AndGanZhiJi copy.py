@@ -1,35 +1,104 @@
+#!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
+
+"""
+机器学习实验六：感知机 + 梯度下降法实验
+
+实验内容：
+1. 实现批量梯度下降法 BGD；
+2. 实现随机梯度下降法 SGD；
+3. 实现小批量梯度下降法 MBGD；
+4. 将三种算法用于感知机算法训练；
+5. 判断原始感知机代码采用的梯度下降法种类；
+6. SGD 和 MBGD 每个 epoch 都需要打乱数据顺序。
+"""
+
 import random
 
 
 class VecHelper(object):
+    """
+    向量计算辅助类
+
+    这里没有使用过多语法糖，主要使用普通 for 循环完成计算，
+    这样代码逻辑更直观，也便于在实验报告中解释。
+    """
+
     @staticmethod
     def dot_product(left_vec, right_vec):
+        """
+        计算两个向量的点积
+
+        例如：
+        left_vec  = [1, 2]
+        right_vec = [3, 4]
+        点积结果 = 1 * 3 + 2 * 4 = 11
+        """
         result = 0.0
+
         for i in range(len(left_vec)):
             result += left_vec[i] * right_vec[i]
+
         return result
 
     @staticmethod
     def add_vector(vec_a, vec_b):
+        """
+        两个向量对应位置相加
+        """
         new_vec = []
+
         for i in range(len(vec_a)):
             new_vec.append(vec_a[i] + vec_b[i])
+
         return new_vec
 
     @staticmethod
     def multiply_number(vec, number):
+        """
+        向量乘以一个数字
+
+        例如：
+        [1, 2] * 0.5 = [0.5, 1.0]
+        """
         new_vec = []
+
         for value in vec:
             new_vec.append(value * number)
+
         return new_vec
 
 
 class SimplePerceptron(object):
+    """
+    简单感知机模型
+
+    本实验使用 AND 逻辑数据集进行训练。
+    感知机的基本形式为：
+
+    output = f(w1 * x1 + w2 * x2 + b)
+
+    其中：
+    w1、w2 是权重；
+    x1、x2 是输入特征；
+    b 是偏置；
+    f 是阶跃激活函数。
+    """
+
     def __init__(self, feature_count, active_func):
+        """
+        初始化感知机
+
+        feature_count 表示输入特征个数；
+        active_func 表示激活函数。
+        """
         self.active_func = active_func
+
         # 初始化权重，AND 数据集有两个输入特征，所以默认会产生两个权重
-        self.weight_list,self.bias_value= [0.0] * feature_count,0.0
+        self.weight_list = [0.0] * feature_count
+
+        # 初始化偏置
+        self.bias_value = 0.0
 
     def __str__(self):
         """
@@ -40,6 +109,11 @@ class SimplePerceptron(object):
         return info
 
     def get_raw_score(self, input_data):
+        """
+        计算未经过激活函数之前的线性结果
+
+        raw_score = w1 * x1 + w2 * x2 + b
+        """
         score = VecHelper.dot_product(input_data, self.weight_list)
         score += self.bias_value
         return score
