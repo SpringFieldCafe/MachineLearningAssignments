@@ -1,7 +1,5 @@
 # -*- coding: UTF-8 -*-
 import random
-
-
 class VecHelper(object):
     @staticmethod
     def dot_product(left_vec, right_vec):
@@ -9,28 +7,23 @@ class VecHelper(object):
         for i in range(len(left_vec)):
             result += left_vec[i] * right_vec[i]
         return result
-
     @staticmethod
     def add_vector(vec_a, vec_b):
         new_vec = []
         for i in range(len(vec_a)):
             new_vec.append(vec_a[i] + vec_b[i])
         return new_vec
-
     @staticmethod
     def multiply_number(vec, number):
         new_vec = []
         for value in vec:
             new_vec.append(value * number)
         return new_vec
-
-
 class SimplePerceptron(object):
     def __init__(self, feature_count, active_func):
         self.active_func = active_func
-        # 初始化权重，AND 数据集有两个输入特征，所以默认会产生两个权重
+        # 初始化权重和偏置，AND 数据集有两个输入特征，所以默认会产生两个权重
         self.weight_list,self.bias_value= [0.0] * feature_count,0.0
-
     def __str__(self):
         """
         方便打印模型训练后的参数
@@ -38,7 +31,6 @@ class SimplePerceptron(object):
         info = "weights\t: {}\n".format(self.weight_list)
         info += "bias\t\t: {:.6f}\n".format(self.bias_value)
         return info
-
     def get_raw_score(self, input_data):
         score = VecHelper.dot_product(input_data, self.weight_list)
         score += self.bias_value
@@ -56,29 +48,21 @@ class SimplePerceptron(object):
     def update_by_one_sample(self, input_data, real_label, learn_rate):
         """
         使用单个样本更新参数
-
-        感知机更新规则：
-        error = real_label - predict_label
-
+        感知机更新规则：error = real_label - predict_label
         weight = weight + learn_rate * error * input_data
         bias  = bias  + learn_rate * error
         """
         predict_label = self.predict(input_data)
-
         error = real_label - predict_label
-
         weight_change = VecHelper.multiply_number(
             input_data,
             learn_rate * error
         )
-
         self.weight_list = VecHelper.add_vector(
             self.weight_list,
             weight_change
         )
-
         self.bias_value += learn_rate * error
-
         return abs(error)
 
     # ==========================================================
@@ -87,36 +71,29 @@ class SimplePerceptron(object):
     def fit_original_order(self, train_x, train_y, epoch_num, learn_rate):
         """
         原始感知机代码的训练方式判断：
-
         原代码的特点是：
         1. 按照数据原本顺序读取样本；
         2. 每读取一个样本，就立即更新一次权重和偏置；
         3. 每个 epoch 没有随机打乱数据。
-
         因此，原始代码可以判断为：
         顺序随机梯度下降 / 在线更新方式。
-
         但是它没有 random.shuffle，
         所以不是严格意义上的“随机打乱 SGD”。
         """
         for epoch in range(epoch_num):
-
             total_wrong = 0
-
             for i in range(len(train_x)):
                 total_wrong += self.update_by_one_sample(
                     train_x[i],
                     train_y[i],
                     learn_rate
                 )
-
             print(
                 "[Original Order Update] epoch = {:02d}, error = {}".format(
                     epoch + 1,
                     total_wrong
                 )
             )
-
     # ==========================================================
     # 二、批量梯度下降 BGD
     # ==========================================================
