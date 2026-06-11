@@ -1,0 +1,225 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='455' height='485'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='10' y='24' font-size='16'>MNIST task4_one_hidden_nn test_acc=0.8840</text>
+<text x='30' y='79' font-size='12'>0</text>
+<text x='69' y='43' font-size='12'>0</text>
+<text x='30' y='117' font-size='12'>1</text>
+<text x='107' y='43' font-size='12'>1</text>
+<text x='30' y='155' font-size='12'>2</text>
+<text x='145' y='43' font-size='12'>2</text>
+<text x='30' y='193' font-size='12'>3</text>
+<text x='183' y='43' font-size='12'>3</text>
+<text x='30' y='231' font-size='12'>4</text>
+<text x='221' y='43' font-size='12'>4</text>
+<text x='30' y='269' font-size='12'>5</text>
+<text x='259' y='43' font-size='12'>5</text>
+<text x='30' y='307' font-size='12'>6</text>
+<text x='297' y='43' font-size='12'>6</text>
+<text x='30' y='345' font-size='12'>7</text>
+<text x='335' y='43' font-size='12'>7</text>
+<text x='30' y='383' font-size='12'>8</text>
+<text x='373' y='43' font-size='12'>8</text>
+<text x='30' y='421' font-size='12'>9</text>
+<text x='411' y='43' font-size='12'>9</text>
+<rect x='55' y='55' width='38' height='38' fill='rgb(135,135,255)' stroke='white'/>
+<text x='63' y='79' font-size='10'>83</text>
+<rect x='93' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='101' y='79' font-size='10'>0</text>
+<rect x='131' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='139' y='79' font-size='10'>0</text>
+<rect x='169' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='79' font-size='10'>0</text>
+<rect x='207' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='215' y='79' font-size='10'>0</text>
+<rect x='245' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='253' y='79' font-size='10'>0</text>
+<rect x='283' y='55' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='291' y='79' font-size='10'>2</text>
+<rect x='321' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='79' font-size='10'>0</text>
+<rect x='359' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='367' y='79' font-size='10'>0</text>
+<rect x='397' y='55' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='405' y='79' font-size='10'>0</text>
+<rect x='55' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='63' y='117' font-size='10'>0</text>
+<rect x='93' y='93' width='38' height='38' fill='rgb(75,75,255)' stroke='white'/>
+<text x='101' y='117' font-size='10'>125</text>
+<rect x='131' y='93' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='139' y='117' font-size='10'>1</text>
+<rect x='169' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='117' font-size='10'>0</text>
+<rect x='207' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='215' y='117' font-size='10'>0</text>
+<rect x='245' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='253' y='117' font-size='10'>0</text>
+<rect x='283' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='291' y='117' font-size='10'>0</text>
+<rect x='321' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='117' font-size='10'>0</text>
+<rect x='359' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='367' y='117' font-size='10'>0</text>
+<rect x='397' y='93' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='405' y='117' font-size='10'>0</text>
+<rect x='55' y='131' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='63' y='155' font-size='10'>1</text>
+<rect x='93' y='131' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='101' y='155' font-size='10'>1</text>
+<rect x='131' y='131' width='38' height='38' fill='rgb(102,102,255)' stroke='white'/>
+<text x='139' y='155' font-size='10'>106</text>
+<rect x='169' y='131' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='155' font-size='10'>0</text>
+<rect x='207' y='131' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='215' y='155' font-size='10'>0</text>
+<rect x='245' y='131' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='253' y='155' font-size='10'>0</text>
+<rect x='283' y='131' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='291' y='155' font-size='10'>1</text>
+<rect x='321' y='131' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='329' y='155' font-size='10'>3</text>
+<rect x='359' y='131' width='38' height='38' fill='rgb(249,249,255)' stroke='white'/>
+<text x='367' y='155' font-size='10'>4</text>
+<rect x='397' y='131' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='405' y='155' font-size='10'>0</text>
+<rect x='55' y='169' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='63' y='193' font-size='10'>1</text>
+<rect x='93' y='169' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='101' y='193' font-size='10'>3</text>
+<rect x='131' y='169' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='139' y='193' font-size='10'>3</text>
+<rect x='169' y='169' width='38' height='38' fill='rgb(152,152,255)' stroke='white'/>
+<text x='177' y='193' font-size='10'>71</text>
+<rect x='207' y='169' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='215' y='193' font-size='10'>1</text>
+<rect x='245' y='169' width='38' height='38' fill='rgb(226,226,255)' stroke='white'/>
+<text x='253' y='193' font-size='10'>20</text>
+<rect x='283' y='169' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='291' y='193' font-size='10'>1</text>
+<rect x='321' y='169' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='329' y='193' font-size='10'>3</text>
+<rect x='359' y='169' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='367' y='193' font-size='10'>2</text>
+<rect x='397' y='169' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='405' y='193' font-size='10'>2</text>
+<rect x='55' y='207' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='63' y='231' font-size='10'>0</text>
+<rect x='93' y='207' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='101' y='231' font-size='10'>0</text>
+<rect x='131' y='207' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='139' y='231' font-size='10'>1</text>
+<rect x='169' y='207' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='231' font-size='10'>0</text>
+<rect x='207' y='207' width='38' height='38' fill='rgb(106,106,255)' stroke='white'/>
+<text x='215' y='231' font-size='10'>103</text>
+<rect x='245' y='207' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='253' y='231' font-size='10'>0</text>
+<rect x='283' y='207' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='291' y='231' font-size='10'>2</text>
+<rect x='321' y='207' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='231' font-size='10'>0</text>
+<rect x='359' y='207' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='367' y='231' font-size='10'>1</text>
+<rect x='397' y='207' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='405' y='231' font-size='10'>3</text>
+<rect x='55' y='245' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='63' y='269' font-size='10'>0</text>
+<rect x='93' y='245' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='101' y='269' font-size='10'>0</text>
+<rect x='131' y='245' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='139' y='269' font-size='10'>0</text>
+<rect x='169' y='245' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='269' font-size='10'>0</text>
+<rect x='207' y='245' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='215' y='269' font-size='10'>3</text>
+<rect x='245' y='245' width='38' height='38' fill='rgb(139,139,255)' stroke='white'/>
+<text x='253' y='269' font-size='10'>80</text>
+<rect x='283' y='245' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='291' y='269' font-size='10'>2</text>
+<rect x='321' y='245' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='269' font-size='10'>0</text>
+<rect x='359' y='245' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='367' y='269' font-size='10'>1</text>
+<rect x='397' y='245' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='405' y='269' font-size='10'>1</text>
+<rect x='55' y='283' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='63' y='307' font-size='10'>3</text>
+<rect x='93' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='101' y='307' font-size='10'>0</text>
+<rect x='131' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='139' y='307' font-size='10'>0</text>
+<rect x='169' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='307' font-size='10'>0</text>
+<rect x='207' y='283' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='215' y='307' font-size='10'>2</text>
+<rect x='245' y='283' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='253' y='307' font-size='10'>2</text>
+<rect x='283' y='283' width='38' height='38' fill='rgb(139,139,255)' stroke='white'/>
+<text x='291' y='307' font-size='10'>80</text>
+<rect x='321' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='307' font-size='10'>0</text>
+<rect x='359' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='367' y='307' font-size='10'>0</text>
+<rect x='397' y='283' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='405' y='307' font-size='10'>0</text>
+<rect x='55' y='321' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='63' y='345' font-size='10'>0</text>
+<rect x='93' y='321' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='101' y='345' font-size='10'>3</text>
+<rect x='131' y='321' width='38' height='38' fill='rgb(249,249,255)' stroke='white'/>
+<text x='139' y='345' font-size='10'>4</text>
+<rect x='169' y='321' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='177' y='345' font-size='10'>0</text>
+<rect x='207' y='321' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='215' y='345' font-size='10'>1</text>
+<rect x='245' y='321' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='253' y='345' font-size='10'>1</text>
+<rect x='283' y='321' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='291' y='345' font-size='10'>0</text>
+<rect x='321' y='321' width='38' height='38' fill='rgb(132,132,255)' stroke='white'/>
+<text x='329' y='345' font-size='10'>85</text>
+<rect x='359' y='321' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='367' y='345' font-size='10'>2</text>
+<rect x='397' y='321' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='405' y='345' font-size='10'>3</text>
+<rect x='55' y='359' width='38' height='38' fill='rgb(249,249,255)' stroke='white'/>
+<text x='63' y='383' font-size='10'>4</text>
+<rect x='93' y='359' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='101' y='383' font-size='10'>0</text>
+<rect x='131' y='359' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='139' y='383' font-size='10'>0</text>
+<rect x='169' y='359' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='177' y='383' font-size='10'>1</text>
+<rect x='207' y='359' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='215' y='383' font-size='10'>2</text>
+<rect x='245' y='359' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='253' y='383' font-size='10'>2</text>
+<rect x='283' y='359' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='291' y='383' font-size='10'>0</text>
+<rect x='321' y='359' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='329' y='383' font-size='10'>0</text>
+<rect x='359' y='359' width='38' height='38' fill='rgb(142,142,255)' stroke='white'/>
+<text x='367' y='383' font-size='10'>78</text>
+<rect x='397' y='359' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='405' y='383' font-size='10'>2</text>
+<rect x='55' y='397' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='63' y='421' font-size='10'>0</text>
+<rect x='93' y='397' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='101' y='421' font-size='10'>2</text>
+<rect x='131' y='397' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='139' y='421' font-size='10'>0</text>
+<rect x='169' y='397' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='177' y='421' font-size='10'>1</text>
+<rect x='207' y='397' width='38' height='38' fill='rgb(237,237,255)' stroke='white'/>
+<text x='215' y='421' font-size='10'>12</text>
+<rect x='245' y='397' width='38' height='38' fill='rgb(253,253,255)' stroke='white'/>
+<text x='253' y='421' font-size='10'>1</text>
+<rect x='283' y='397' width='38' height='38' fill='rgb(255,255,255)' stroke='white'/>
+<text x='291' y='421' font-size='10'>0</text>
+<rect x='321' y='397' width='38' height='38' fill='rgb(250,250,255)' stroke='white'/>
+<text x='329' y='421' font-size='10'>3</text>
+<rect x='359' y='397' width='38' height='38' fill='rgb(252,252,255)' stroke='white'/>
+<text x='367' y='421' font-size='10'>2</text>
+<rect x='397' y='397' width='38' height='38' fill='rgb(149,149,255)' stroke='white'/>
+<text x='405' y='421' font-size='10'>73</text>
+<text x='55' y='475' font-size='12'>横轴为预测类别，纵轴为真实类别</text>
+</svg>
